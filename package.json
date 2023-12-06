@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/StanBondar/fedex-node-api"
+    "url": "git+https://github.com/StanBondar/fedex-node-api.git"
   }
 }
