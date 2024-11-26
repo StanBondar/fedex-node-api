@@ -28,7 +28,7 @@ export type TAuthenticateResponse = {
     scope: string;
 };
 
-export type TRequest = 'ACCOUNT' | 'LIST' | 'PREFERRED';
+export type TRequest = 'ACCOUNT' | 'LIST';
 
 export type TPackageLineItem = {
     weight: {
@@ -120,7 +120,6 @@ export type TRetrieveRatePayload = {
                 countryCode: string;
             };
         };
-        preferredCurrency: string;
         pickupType: TPickup;
         rateRequestType: TRequest[];
         requestedPackageLineItems: TPackageLineItem[];
