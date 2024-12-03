@@ -20,9 +20,7 @@ class FedExApi {
     constructor({ client_id, client_secret, is_sandbox = false }: TFedExConstructor) {
         this.client_id = client_id;
         this.client_secret = client_secret;
-        this.base_url = is_sandbox
-            ? 'https://apis-sandbox.fedex.com'
-            : 'https://developer.fedex.com/api/en-mx';
+        this.base_url = is_sandbox ? 'https://apis-sandbox.fedex.com' : 'https://apis.fedex.com';
         this.token = {
             token_type: null,
             access_token: null,
